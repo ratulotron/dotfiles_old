@@ -84,6 +84,19 @@ indent = { tab-width = 4, unit = "	" }
 auto-format = true
 
 
+# Zig
+[[language]]
+name = "zig"
+language-servers = [ "zls" ]
+formatter = { command = "zig", args = ["fmt", "--stdin"] }
+
+[language-server.zls]
+command = "zls"
+
+[language-server.zls.config]
+enable_build_on_save = true
+
+
 #####################
 # Backend Languages #
 #####################

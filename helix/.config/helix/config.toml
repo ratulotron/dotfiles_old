@@ -1,4 +1,4 @@
-theme = "solarized_light"
+theme = "solarized_dark"
 
 [editor]
 auto-save = true

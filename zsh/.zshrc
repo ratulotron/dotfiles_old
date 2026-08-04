@@ -91,3 +91,6 @@ for file in ${(M)config_files:#*/completion.zsh}; do
 done
 
 unset config_files
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
